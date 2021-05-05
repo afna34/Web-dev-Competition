@@ -40,3 +40,19 @@
     
     
 }
+.container{
+    position: relative;
+    padding-top: 50px;
+    height: 600px;
+    width: 100%;
+}
+.main_container{
+    position: relative;
+    top: 6rem;
+}
+.main-text{
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 6rem;
+}
