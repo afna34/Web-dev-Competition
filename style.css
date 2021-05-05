@@ -16,6 +16,20 @@ body {
 .sias-logo{
   width: 400px;
 }
+.safi-image{
+  margin: 0;
+  padding: 0;
+}
+.about-div{
+  width: 55%;
+  position: relative;
+  top: -135%;
+  right: -46%;
+
+}
+.para-about{
+  font-size: 15px;
+}
 .colist{
   float: right;
   list-style: none;
