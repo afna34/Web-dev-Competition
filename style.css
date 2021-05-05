@@ -7,7 +7,7 @@
     height: 40%;
     background-color:gray;
     position: absolute;
-    top: 20%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-size: 100% 100%;
@@ -24,8 +24,59 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 50%;
 }
+.main-image
+{
+    display: none;
+}
+.main-text
+{
+    display: none;
+}
+
+.list
+    {
+        list-style: none;
+        position: relative;
+        text-align: center;
+        color: red;
+    }
+.marker
+{
+    width: 10px;
+}
+.gallary
+{
+    position: relative;
+    margin-top: 110%;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+}
+.gallary h1
+{
+    text-align: center;
+    color: gray;
+}
+.gimage{
+    padding: 10px;
+}
+.footer {
+    display: block;
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    background-color:grey;
+    color: white;
+    text-align: center;
+ }
+
 
 @keyframes slider {
     0%{
@@ -40,19 +91,88 @@
     
     
 }
-.container{
+
+@media only screen and (min-width: 768px) 
+{
+    .list
+    {
+        display: none;
+    }
+    .main-image
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .sias-logo
+    {
+        display: none;
+    }
+    .main-text{
+        display: block;
+        color: white;
+        position: relative;
+        text-align: center;
+        top: 6rem;
+    }
+    .main_container{
+        position: relative;
+        top: 6rem;
+    }
+    .container{
+        position: relative;
+        padding-top: 50px;
+        height: 600px;
+        width: 100%;
+    }
+    .outer{
+        display: none;
+    }
+    .sias-logo
+    {
+        width: 25%;
+        height: 70px;
+        margin-left: 10%;
+    }
+    .list
+    {
+        list-style: none;
+        position:absolute;
+        top: 5px;
+        right: 5%;
+    }
+    .inner
+    {
+        background: url(banner.jpg);
+    }
+    .marker
+    {
+        width: 10px;
+    }
+    .gallary
+{
     position: relative;
-    padding-top: 50px;
-    height: 600px;
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+    border: 1px solid;
+}
+.gimage
+{
+    display:inline-block;
+    position: relative;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 250px;
+    padding: 10px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom:0;
     width: 100%;
-}
-.main_container{
-    position: relative;
-    top: 6rem;
-}
-.main-text{
+    background-color:grey;
     color: white;
-    position: relative;
     text-align: center;
-    top: 6rem;
+ }
 }
