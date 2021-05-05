@@ -1,178 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.outer{
-    width: 100%;
-    height: 40%;
-    background-color:gray;
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url('background.jpeg');
-    animation-name: slider;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.sias-logo
-{ 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
     display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
     margin-top: 20px;
-    width: 50%;
-}
-.main-image
-{
-    display: none;
-}
-.main-text
-{
-    display: none;
-}
-
-.list
-    {
-        list-style: none;
-        position: relative;
-        text-align: center;
-        color: red;
-    }
-.marker
-{
-    width: 10px;
-}
-.gallary
-{
-    position: relative;
-    margin-top: 110%;
-    width: 100%;
-    height: auto;
-    border: 1px solid;
-}
-.gallary h1
-{
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
     text-align: center;
-    color: gray;
-}
-.gimage{
-    padding: 10px;
-}
-.footer {
-    display: block;
-    position: relative;
-    margin-left:auto;
-    margin-right: auto;
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    background-color:grey;
-    color: white;
-    text-align: center;
- }
-
-
-@keyframes slider {
-    0%{
-        background-image: url('background.jpeg');
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
     }
-        35%{
-            background-image: url('bgimage5.jpg');
-        }
-        75%{
-            background-image: url('bgimage4.webp');
-        }
-    
-    
-}
-
-@media only screen and (min-width: 768px) 
-{
-    .list
-    {
-        display: none;
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
     }
-    .main-image
-    {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .sias-logo
-    {
-        display: none;
-    }
-    .main-text{
-        display: block;
-        color: white;
-        position: relative;
-        text-align: center;
-        top: 6rem;
-    }
-    .main_container{
-        position: relative;
-        top: 6rem;
-    }
-    .container{
-        position: relative;
-        padding-top: 50px;
-        height: 600px;
-        width: 100%;
-    }
-    .outer{
-        display: none;
-    }
-    .sias-logo
-    {
-        width: 25%;
-        height: 70px;
-        margin-left: 10%;
-    }
-    .list
-    {
-        list-style: none;
-        position:absolute;
-        top: 5px;
-        right: 5%;
-    }
-    .inner
-    {
-        background: url(banner.jpg);
-    }
-    .marker
-    {
-        width: 10px;
-    }
-    .gallary
-{
-    position: relative;
-    margin-top: 5%;
-    width: auto;
-    height: auto;
-    border: 1px solid;
-}
-.gimage
-{
-    display:inline-block;
-    position: relative;
-    margin-left: 5%;
-    margin-right: auto;
-    width: 250px;
-    padding: 10px;
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    background-color:grey;
-    color: white;
-    text-align: center;
- }
-}
+  }
