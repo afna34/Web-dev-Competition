@@ -276,9 +276,11 @@ margin-right: auto;
 
 
 
-
+[class*="col-"] {
+  width: 100%;
+}
 /* Responsive layout -*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
@@ -298,15 +300,13 @@ margin-right: auto;
     display: none;
   }
   .about-div{
-    width: auto;
+    width:100% ;
   position: relative;
   top: auto;
   right:auto;
   }
-  .para-about{
-     
-  }
 }
+
 
 /* Responsive layout */
 @media screen and (max-width: 400px) {
@@ -314,6 +314,7 @@ margin-right: auto;
     float: none;
     width: 100%;
   }
+
   .sias-logo{
     margin: -30px;
     width: 300px;
