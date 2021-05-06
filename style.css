@@ -21,10 +21,9 @@ body {
   padding: 0;
 }
 .about-div{
-  width: 55%;
-  position: relative;
-  top: -135%;
-  right: -46%;
+ width: 100%;
+ height: auto;
+  
 
 }
 .para-about{
@@ -151,10 +150,16 @@ body {
   width: 100%;
   padding: 20px;
 }
+.images-bg1{
+  display: none;
+}
 .safi {
-  
   width: 100%;
-  padding: 20px;
+}
+.gallary{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .esia
 {
@@ -203,7 +208,9 @@ margin-right: auto;
   display: table;
   clear: both;
 }
-
+.top a{
+  font-size: large;
+}
 /* Footer */
 .footer {
   padding: 20px;
@@ -269,11 +276,6 @@ margin-right: auto;
   color: white;
 }
 
-
-
-[class*="col-"] {
-  width: 100%;
-}
 /* Responsive layout -*/
 @media screen and (max-width: 1200px) {
   .leftcolumn, .rightcolumn {   
@@ -300,9 +302,14 @@ margin-right: auto;
   top: auto;
   right:auto;
   }
+  .images-bg1{
+    display: inline-block;
+    width: 100%;
+  padding: 20px;
+  }
 }
 /* Responsive layout */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 400px) {
   .topnav a {
     float: none;
     width: 100%;
@@ -312,6 +319,10 @@ margin-right: auto;
     margin: -30px;
     width: 300px;
   }
+  .images-bg1{
+    display: none;
+  }
+  
 }
 #copy_right{
   font-size: 12px;
@@ -321,6 +332,5 @@ margin-right: auto;
   position: relative;
   top: 1rem;
 }
-.gallery-images-card4{
-  position: relative;
-}
+
+
