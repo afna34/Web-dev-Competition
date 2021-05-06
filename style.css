@@ -151,6 +151,11 @@ body {
   width: 100%;
   padding: 20px;
 }
+.safi {
+  
+  width: 100%;
+  padding: 20px;
+}
 .gallary{
   display: block;
   margin-left: auto;
@@ -169,7 +174,19 @@ margin-right: auto;
 }
 
 /* Add a card effect for articles */
-.card {
+.card3{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card4{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card5{
   text-align: center;
   background-color: white;
   padding: 20px;
@@ -228,26 +245,6 @@ margin-right: auto;
   margin-right: auto;
   display: block;
 }
-
-/* Responsive layout -*/
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-  .sias-logo{
-    margin: -30px;
-    width: 300px;
-  }
-}
 .social-media-icons{
   position: relative;
   top: 1rem;
@@ -276,4 +273,51 @@ margin-right: auto;
   background-color: #008CBA;
   color: white;
 }
+
+
+
+
+/* Responsive layout -*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .sias-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .safi{
+    display: none;
+  }
+  .colist{
+    display: none;
+  }
+  .professor{
+    display: none;
+  }
+  .about-div{
+    width: auto;
+  position: relative;
+  top: auto;
+  right:auto;
+  }
+  .para-about{
+     
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .sias-logo{
+    margin: -30px;
+    width: 300px;
+  }
+}
+
 
