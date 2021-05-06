@@ -129,7 +129,7 @@ body {
   color:black;
 }
 
-/* Create two unequal columns that floats next to each other */
+/* Create two unequal columns */
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -146,7 +146,7 @@ body {
 
 
 /* image */
-.fakeimg {
+.images-bg {
   
   width: 100%;
   padding: 20px;
@@ -173,7 +173,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-/* Add a card effect for articles */
+/* Add a card effect  */
 .card3{
   text-align: center;
   background-color: white;
@@ -306,8 +306,6 @@ margin-right: auto;
   right:auto;
   }
 }
-
-
 /* Responsive layout */
 @media screen and (max-width: 400px) {
   .topnav a {
@@ -319,6 +317,14 @@ margin-right: auto;
     margin: -30px;
     width: 300px;
   }
+}
+#copy_right{
+  font-size: 12px;
+  padding-top: 1rem;
+  color: #a1a1a1;
+  background-color: #000000;
+  position: relative;
+  top: 1rem;
 }
 
 
