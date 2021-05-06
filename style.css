@@ -156,11 +156,6 @@ body {
   width: 100%;
   padding: 20px;
 }
-.gallary{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .esia
 {
   margin-left: -20px;
@@ -307,7 +302,7 @@ margin-right: auto;
   }
 }
 /* Responsive layout */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   .topnav a {
     float: none;
     width: 100%;
@@ -326,5 +321,6 @@ margin-right: auto;
   position: relative;
   top: 1rem;
 }
-
-
+.gallery-images-card4{
+  position: relative;
+}
